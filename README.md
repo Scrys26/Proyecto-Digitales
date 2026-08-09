@@ -52,7 +52,7 @@ La comunicación entre todos los módulos sigue una estructura ordenada basada e
 La figura siguiente  resume la arquitectura general:
 
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Top.png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/Top.png" width="350">
 <img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Top%20(2).png?ref_type=heads" width="350">
 <img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Top%20(3).png?ref_type=heads" width="350">
 En este diagrama se observa:
