@@ -53,8 +53,8 @@ La figura siguiente  resume la arquitectura general:
 
 
 <img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/Top.png" width="350">
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Top%20(2).png?ref_type=heads" width="350">
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Top%20(3).png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/Top%20(2).png" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/Top%20(3).png" width="350">
 En este diagrama se observa:
 
 - ROM de instrucciones conectada al PC de la CPU.  
@@ -111,7 +111,7 @@ Está compuesto por:
 - Adaptadores de ancho  
 - FSM de control (TX/RX)
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/uart_top.png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/uart_top.png" width="350">
 
 ### Encabezado del módulo de control
 
@@ -393,7 +393,7 @@ wire in_splash_area =
     (y_vis <  SPLASH_Y0 + SPLASH_H);
 ```
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/WhatsApp%20Image%202025-11-26%20at%209.19.27%20PM.jpeg?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/WhatsApp%20Image%202025-11-26%20at%209.19.27%20PM.jpeg" width="350">
 
 
 ---
@@ -473,7 +473,7 @@ Bloques principales:
 
 Diagrama de alto nivel del temporizador dentro del SoC:
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Timer%20(2).png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/Timer%20(2).png" width="350">
 
 > ```text
 > CPU (APB/MMIO) ──► Timer_Top ──► Control + Contador_descendente ──► timeout_o
@@ -2406,7 +2406,7 @@ En la simulación del `soc_top` se observaron las siguientes fases claramente di
   - La señal del **Timer** (`timeout_o`) se activa cuando expira el tiempo de turno, y el ensamblador responde cambiando de fase o forzando el cambio de jugador.
 
 Estas formas de onda permiten verificar que la secuencia de estados del juego se corresponde con el diseño de alto nivel descrito en el README.
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/JuegoC%20(1).png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/JuegoC%20(1).png" width="350">
 
 
 #### 2.2 Verificación de Timer y VGA
@@ -2416,7 +2416,7 @@ Estas formas de onda permiten verificar que la secuencia de estados del juego se
   - El pulso de `timeout_o` tiene duración de **un solo ciclo**, alineado con el paso de `counter_reg = 1 → 0`.
   - En modo *autoreload* se observa el patrón esperado: `timeout_o` periódico y recarga automática del contador.
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/timerw.png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/timerw.png" width="350">
 
 - **VGA**
   - Los contadores horizontales y verticales generan la temporización estándar 640×480@60 Hz.
@@ -2425,7 +2425,7 @@ Estas formas de onda permiten verificar que la secuencia de estados del juego se
     2. **Splash activo** → imagen desde `splash_rom` centrada verticalmente.
     3. **Juego activo** → mezcla de fondo, rejilla, texto, celdas y cursor según la prioridad definida.
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/VGA.png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/VGA.png" width="350">
 
 ---
 
@@ -2510,20 +2510,20 @@ Observaciones principales:
 ---
 **Pruebas**
 
-![sw](https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Prueba_Completa.mp4?ref_type=heads)
+![sw](https://github.com/Scrys26/Proyecto-Digitales/blob/main/Figuras/Prueba_Completa.mp4)
 
 
 **Tablero VGA**
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/a0fc13a6-f72b-455c-b1bc-c68c4f63fd46.jpg?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/a0fc13a6-f72b-455c-b1bc-c68c4f63fd46.jpg" width="350">
 
 **Tablero Python**
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Screenshot%202025-11-26%20220350.png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/Screenshot%202025-11-26%20220350.png" width="350">
 
 **Splash Pyhton**
 
-<img src ="https://gitlab.com/el3313-ii2025-g1/proyecto/-/raw/Final/Figuras/Screenshot%202025-11-26%20220717.png?ref_type=heads" width="350">
+<img src ="https://raw.githubusercontent.com/Scrys26/Proyecto-Digitales/refs/heads/main/Figuras/Screenshot%202025-11-26%20220717.png" width="350">
 
 ### 5. Síntesis del desempeño y posibles mejoras
 
